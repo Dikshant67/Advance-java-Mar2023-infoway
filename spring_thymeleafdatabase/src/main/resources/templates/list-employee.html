@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Employee List</h3>
+<table border="1">
+<!-- <input type="button" value="Add Student"  onclick="window.location.href='ShowFormForAdd'; return false;"  /> -->
+
+<thead>
+<tr><td>
+
+
+</td></tr>
+<tr>
+<th>FIRST NAME </th>
+<th>LAST NAME </th>
+<th>EMAIL</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each = "tempEmployee : ${employees}">
+<td th:text = "${tempEmployee.firstname}"></td>
+<td th:text = "${tempEmployee.lastname}"></td>
+
+<td th:text = "${tempEmployee.email}"></td>
+<!-- <td><form action="deleteEmployee" method="post"> -->
+<!-- <input type="number" name="employeeId" value="${tempEmployee.id }" hidden="hidden"> -->
+<!-- <input type="submit" value="DELETE RECORD"> -->
+<!-- </form></td> -->
+ <td><a th:href="@{/employees/deleteEmployee/{id}(id=${tempEmployee.id})}">Delete</a></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
