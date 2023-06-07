@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+<class name="com.app.Student" table="student">
+<id name="id">
+
+<generator class="increment"></generator>
+
+</id>
+<property name="firstname" ></property>
+<property name="lastname"></property>
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<bean id="std" class="com.collection.Student">
+  <property name="id" >
+  <list>
+  <value>1</value>
+  <value>2</value>
+  <value>3</value>
+  <value>4</value>
+  <value>5</value>
+  <value>6</value>
+  </list>
+  </property>
+  
+   
+  <property name="name">
+  <set>
+   <value>ABC</value>
+  <value>PQR</value>
+  <value>PQR</value>
+  <value>PQR</value>
+  <value>PQR</value>
+  <value>PQR</value>
+  </set>
+  
+ 
+  </property>
+  <property name="cls">
+  
+  <map>
+  <entry key="1" value="st"/>
+  <entry key="2" value="nd"/>
+  <entry key="3" value="rd"/>
+  <entry key="4" value="th"/>
+  </map>
+  </property>
+  </bean>
+
+<bean id="heartObject" class="com.app.Heart">
+</bean>
+
+
+
+
+</beans>

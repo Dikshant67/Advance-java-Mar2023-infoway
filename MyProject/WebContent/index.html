@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script type="text/javascript">
+
+function Validation(){
+	if(document.reg_form.txtUserName.value=="" && document.reg_form.txtUserPassword.value==""){
+		alert("Please Enter Both details");
+		return false;
+	}
+}
+
+
+
+</script>
+<title>Index</title>
+</head>
+<body>
+<form action="MyServlet" method="post" name="reg_form" onsubmit="return Validation()">
+<table border="1">
+<tr>
+<td>Enter UserName :</td>
+<td><input type="text" name="txtUserName"></td>
+
+</tr>
+<tr>
+
+<td>Enter UserPassword  :</td>
+<td><input type="password" name="txtUserPassword"></td>
+</tr>
+
+<tr>
+
+<td><button type="reset" value="RESET">RESET</button></td>
+
+<td><button type="submit" value="SUBMIT">SUBMIT</button></td>
+
+</tr>
+
+
+</table>
+
+
+</form>
+
+</body>
+</html>

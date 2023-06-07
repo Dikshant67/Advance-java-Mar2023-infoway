@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!-- <bean id="human" class="com.app.Human" autowire="constructor"/> -->
+<!-- <bean id="human" class="com.app.Human" autowire="byName" /> -->
+<bean id="human" class="com.app.Human" autowire="byType"/>
+<bean id="heartObject" class="com.app.Heart"></bean>
+
+
+
+
+ <!-- <constructor-arg ref="heart"></constructor-arg> 
+
+ Human human=new Human(heart); 
+ Object is being passed as an argument in the paramaterized contructor
+ -->
+ 
+
+ 
+ 
+   
+<!--   <property name="heart" ref="heartObject"></property>  -->
+  <!-- Human human = new Human()
+  Heart heartObject = new Heart();
+  Human.setHeart(heartObject);
+  Object is being passed as an argument in the Setter of heart  
+   -->
+
+<!-- </bean> -->
+
+<!-- <bean id="heartObject" class="com.app.Heart"> -->
+
+
+
+
+</beans>
